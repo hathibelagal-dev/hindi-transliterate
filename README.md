@@ -54,4 +54,8 @@ Romanized: hṛdaye tasyāḥ saṁnādati saumyaṁ, buddhyā viśvaṁ prakā�
 ---
 Devanagari: आप का नाम क्या है 
 Romanized: aap kaa naam kyaa hai 
+---
+Devanagari: It's okay, तुम अब सो सकते हो 
+Romanized: It's okay, tum ab so sakate ho 
+---
 ```

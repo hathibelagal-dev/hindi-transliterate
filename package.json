@@ -1,6 +1,6 @@
 {
   "name": "@indic-tools/hindi-transliterate",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Transliterates text from devanagiri script to latin script",
   "main": "src/index.js",
   "scripts": {
@@ -11,13 +11,17 @@
     "url": "git+https://github.com/hathibelagal-dev/hindi-transliterate.git"
   },
   "keywords": [
-    "devanagiri",
+    "devanagari",
     "hindi",
     "transliterate",
     "romanize",
     "romanization",
     "indic",
-    "nlp"
+    "indian",
+    "nlp",
+    "hunterian",
+    "sanskrit",
+    "transliteration"
   ],
   "author": "Ashraff Hathibelagal",
   "license": "Apache-2.0",
