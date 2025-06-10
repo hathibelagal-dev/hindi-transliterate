@@ -1,4 +1,4 @@
-const { transliterate } = require('./src/index.js');
+const { transliterate } = require('../src/index.js');
 
 const testsCasual = [
     "नमस्ते",

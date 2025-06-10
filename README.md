@@ -34,3 +34,20 @@ console.log(result);
 
 // namaste
 ```
+
+## Sample Outputs
+
+```
+---
+Devanagari Sanskrit: नित्यं शान्तिमयी च रम्या, तया जीवनं समृद्धं भवति 
+Romanized: nityaṁ śāntimayī cha ramyā, tayā jīvanaṁ samṛddhaṁ bhavati 
+---
+Devanagari: काव्य की कुछ विशेषताएं 
+Romanized: kaavya kii kuchh visheshataaen 
+---
+Devanagari Sanskrit: हृदये तस्याः संनादति सौम्यं, बुद्ध्या विश्वं प्रकाशति 
+Romanized: hṛdaye tasyāḥ saṁnādati saumyaṁ, buddhyā viśvaṁ prakāśati 
+---
+Devanagari: आप का नाम क्या है 
+Romanized: aap kaa naam kyaa hai 
+```
