@@ -1,5 +1,9 @@
 # hindi-transliterate
 
+![NPM License](https://img.shields.io/npm/l/%40indic-tools%2Fhindi-transliterate)
+[![NPM Version](https://img.shields.io/npm/v/%40indic-tools%2Fhindi-transliterate)](https://www.npmjs.com/package/@indic-tools/hindi-transliterate)
+
+
 This JavaScript module provides a function to transliterate text from Devanagari script to the Hunterian system, commonly used for Romanizing Indian languages like Hindi and Sanskrit. It supports both casual and Sanskrit-specific transliteration modes.
 
 ## Features
