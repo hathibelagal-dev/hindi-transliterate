@@ -1,10 +1,10 @@
 {
-  "name": "hindi-transliterate",
+  "name": "@indic-tools/hindi-transliterate",
   "version": "0.0.1",
   "description": "Transliterates text from devanagiri script to latin script",
   "main": "src/index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "node tests/test.js"
   },
   "repository": {
     "type": "git",

@@ -18,6 +18,8 @@ This JavaScript module provides a function to transliterate text from Devanagari
 ## Sample Usage
 
 ```javascript
+const { transliterate } = require('@indic-tools/transliteration');
+
 var text = "नमस्ते";
 var result = transliterate(text, sanskritMode = false);
 console.log(result);
