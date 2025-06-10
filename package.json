@@ -1,6 +1,6 @@
 {
   "name": "@indic-tools/hindi-transliterate",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Transliterates text from devanagiri script to latin script",
   "main": "src/index.js",
   "scripts": {
@@ -24,8 +24,5 @@
   "bugs": {
     "url": "https://github.com/hathibelagal-dev/hindi-transliterate/issues"
   },
-  "homepage": "https://github.com/hathibelagal-dev/hindi-transliterate#readme",
-  "dependencies": {
-    "@indic-tools/hindi-transliterate": "^0.0.1"
-  }
+  "homepage": "https://github.com/hathibelagal-dev/hindi-transliterate#readme"  
 }
