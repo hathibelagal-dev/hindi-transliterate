@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla JS Transliterate Example</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        textarea { width: 100%; margin: 10px 0; padding: 10px; font-size: 1.1rem; }
+        #output { border: 1px solid #ccc; padding: 15px; border-radius: 5px; background: #f9f9f9; }
+    </style>
+</head>
+<body>
+    <h1>Hindi Transliterate - Vanilla JS Example</h1>
+    <p>Type Devanagari text below:</p>
+    <textarea id="input" rows="4">नमस्ते भारत</textarea>
+    
+    <label>
+        <input type="checkbox" id="sanskritMode"> Sanskrit Mode
+    </label>
+
+    <h3>Result:</h3>
+    <div id="output"></div>
+
+    <script src="../../src/index.js"></script>
+    <script>
+        const input = document.getElementById('input');
+        const output = document.getElementById('output');
+        const sanskritMode = document.getElementById('sanskritMode');
+
+        function update() {
+            // Using the global transliterate function from src/index.js
+            output.textContent = transliterate(input.value, sanskritMode.checked);
+        }
+
+        input.addEventListener('input', update);
+        sanskritMode.addEventListener('change', update);
+        update();
+    </script>
+</body>
+</html>

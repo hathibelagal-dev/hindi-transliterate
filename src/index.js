@@ -265,4 +265,8 @@ function _devanagariToHunterian(text, sanskritMode) {
   return result;
 }
 
-module.exports = { transliterate };
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { transliterate };
+} else if (typeof window !== 'undefined') {
+  window.transliterate = transliterate;
+}

@@ -1,10 +1,14 @@
 {
   "name": "@indic-tools/hindi-transliterate",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Transliterates text from devanagiri script to latin script",
   "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./react": "./src/react.js"
+  },
   "scripts": {
-    "test": "node tests/test.js"
+    "test": "node tests/test.js && node tests/react-test.js"
   },
   "repository": {
     "type": "git",
@@ -25,8 +29,14 @@
   ],
   "author": "Ashraff Hathibelagal",
   "license": "Apache-2.0",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
   "bugs": {
     "url": "https://github.com/hathibelagal-dev/hindi-transliterate/issues"
   },
-  "homepage": "https://github.com/hathibelagal-dev/hindi-transliterate#readme"  
+  "homepage": "https://github.com/hathibelagal-dev/hindi-transliterate#readme",
+  "devDependencies": {
+    "react": "^19.2.4"
+  }
 }

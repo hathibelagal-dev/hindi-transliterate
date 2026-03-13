@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Transliterate Example (Standalone)</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .container { border: 1px solid #ddd; padding: 20px; border-radius: 8px; }
+        textarea { width: 100%; font-size: 1.1rem; padding: 10px; margin: 10px 0; }
+        .result { color: #d63384; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <!-- The core library -->
+    <script src="../../src/index.js"></script>
+    <!-- The React implementation - simplified for standalone -->
+    <script type="text/babel">
+        const { useState, useMemo } = React;
+
+        // Manually implement useTransliterate hook for the example
+        function useTransliterate(text, sanskritMode = false) {
+            return useMemo(() => transliterate(text, sanskritMode), [text, sanskritMode]);
+        }
+
+        function App() {
+            const [text, setText] = useState("सूर्य देव");
+            const [isSanskrit, setIsSanskrit] = useState(false);
+            const transliterated = useTransliterate(text, isSanskrit);
+
+            return (
+                <div className="container">
+                    <h1>React Standalone Example</h1>
+                    <textarea 
+                        value={text} 
+                        onChange={(e) => setText(e.target.value)}
+                        rows="4"
+                    />
+                    <br/>
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            checked={isSanskrit} 
+                            onChange={(e) => setIsSanskrit(e.target.checked)} 
+                        />
+                        Sanskrit Mode
+                    </label>
+                    <hr/>
+                    <h3>Output:</h3>
+                    <p className="result">{transliterated}</p>
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>

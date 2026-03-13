@@ -39,6 +39,37 @@ console.log(result);
 // namaste
 ```
 
+## React Support
+
+This package also provides a React hook and component for seamless integration in React projects.
+
+### Using the Hook
+
+```javascript
+import { useTransliterate } from '@indic-tools/hindi-transliterate/react';
+
+function MyComponent() {
+  const result = useTransliterate("नमस्ते");
+  return <div>{result}</div>;
+}
+```
+
+### Using the Component
+
+```javascript
+import { Transliterate } from '@indic-tools/hindi-transliterate/react';
+
+function MyComponent() {
+  return (
+    <Transliterate 
+      text="नमस्ते" 
+      as="p" 
+      className="hindi-text" 
+    />
+  );
+}
+```
+
 ## Sample Outputs
 
 ```
