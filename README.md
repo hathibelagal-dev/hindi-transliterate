@@ -70,6 +70,22 @@ function MyComponent() {
 }
 ```
 
+## Browser Usage
+
+You can use this library directly in the browser. For simple projects, you can include the script directly:
+
+```html
+<script src="https://unpkg.com/@indic-tools/hindi-transliterate/src/index.js"></script>
+<script>
+  const result = transliterate("नमस्ते");
+  console.log(result); // namaste
+</script>
+```
+
+## Examples
+
+For more detailed integration examples, including React and standalone HTML pages, check the [examples](./examples) directory.
+
 ## Sample Outputs
 
 ```
